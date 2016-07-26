@@ -54,6 +54,7 @@ public class WikiCrawler {
 	 * @throws IOException
 	 */
 	public String crawl(boolean testing) throws IOException {
+//TODO
 		Elements paragraphs;
 		String url = queue.poll();
 		if(url == null)
@@ -79,7 +80,8 @@ public class WikiCrawler {
 	 * @param paragraphs
 	 */
 	// NOTE: absence of access level modifier means package-level
-	void queueInternalLinks(Elements paragraphs) {	
+	void queueInternalLinks(Elements paragraphs) {
+//TODO		
 		for(Element paragraph: paragraphs){
 			Elements links = paragraph.select("[href]");
 			for(Element link: links){
